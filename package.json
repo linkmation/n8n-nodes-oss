@@ -1,6 +1,6 @@
 {
 	"name": "@linkmation/n8n-nodes-oss",
-	"version": "0.5.1",
+	"version": "0.5.2",
 	"description": "nodes to trigger workflows from Aliyun OSS.",
 	"keywords": [
 		"n8n",
