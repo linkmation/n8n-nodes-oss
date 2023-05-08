@@ -782,7 +782,9 @@ export class AliyunOSS implements INodeType {
 						const bucketName = this.getNodeParameter('bucketName', i) as string;
 						const fileName = this.getNodeParameter('fileName', i) as string;
 						const isBinaryData = this.getNodeParameter('binaryData', i);
-						// const additionalFields = this.getNodeParameter('additionalFields', i);
+						const timeout = this.getNodeParameter('timeout', i) as number ?? 300;
+
+            // const additionalFields = this.getNodeParameter('additionalFields', i);
 						// const tagsValues = (this.getNodeParameter('tagsUi', i) as IDataObject).tagsValues as IDataObject[];
 						let path = '/';
 						let body;
@@ -792,6 +794,7 @@ export class AliyunOSS implements INodeType {
               accessKeySecret,
               region,
               bucket: bucketName,
+              timeout,
             });
 
             /*
