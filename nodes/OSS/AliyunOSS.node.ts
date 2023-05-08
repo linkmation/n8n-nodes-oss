@@ -794,7 +794,7 @@ export class AliyunOSS implements INodeType {
               accessKeySecret,
               region,
               bucket: bucketName,
-              timeout: 300,
+              timeout: 300000,
             });
 
             /*
